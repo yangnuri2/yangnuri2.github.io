@@ -19,11 +19,10 @@ layout: nil
       <itunes:email>{{ site.podcast.owner_email }}</itunes:email>
     </itunes:owner>
     <itunes:image href="{{ site.podcast.image }}" />
-    <itunes:category text="Religion & Spirituality">
-      <itunes:sub-category text="Christianity" />
-      </itunes:category>
-        <itunes:explicit>clean</itunes:explicit>
-        
+    <itunes:category text="religion">
+      <itunes:category text="Christianity" />
+    </itunes:category>
+    <itunes:explicit>clean</itunes:explicit>
     {% for post in site.posts %}
     <item>
       <title><![CDATA[{{ post.title }}]]></title>
@@ -40,5 +39,5 @@ layout: nil
       <itunes:keywords><![CDATA[{{ site.podcast.keyword }}]]></itunes:keywords>
     </item>
     {% endfor %}
-    </channel>
+  </channel>
 </rss>
