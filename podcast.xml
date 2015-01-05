@@ -24,6 +24,7 @@ layout: nil
       </itunes:category>
     <itunes:explicit>clean</itunes:explicit>
     {% for post in site.posts %}
+    
     <item>
       <title><![CDATA[{{ post.title }}]]></title>
       <itunes:author><![CDATA[{{ post.author }}]]></itunes:author>
