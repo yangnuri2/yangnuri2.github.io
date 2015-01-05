@@ -21,7 +21,7 @@ layout: nil
        <itunes:category text="Religion &amp; Spirituality">
       <itunes:category text="Christianity" /></itunes:category>
     <itunes:image href="{{ site.podcast.image }}"/>
-    <itunes:explicit>clean</itunes:explicit>
+    <itunes:explicit>no</itunes:explicit>
     {% for post in site.posts %}
     <item>
       <title><![CDATA[{{ post.title }}]]></title>
