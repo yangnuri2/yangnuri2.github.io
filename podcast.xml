@@ -39,5 +39,5 @@ layout: nil
       <itunes:keywords><![CDATA[{{ site.podcast.keyword }}]]></itunes:keywords>
     </item>
     {% endfor %}
-<atom:link href="http://yangnuri2.github.io/podcast.xml" rel="self" type="application/rss+xml" />
+<channel>
 </rss>
