@@ -1,8 +1,9 @@
 ---
 layout: nil
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0"
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title><![CDATA[{{ site.name }}]]></title>
     <link>{{ site.url }}</link>
@@ -17,13 +18,12 @@ layout: nil
       <itunes:name>{{ site.podcast.owner_name }}</itunes:name>
       <itunes:email>{{ site.podcast.owner_email }}</itunes:email>
     </itunes:owner>
-    <itunes:image href="{{ site.podcast.image }}"/>
+    <itunes:image href="{{ site.podcast.image }}" />
     <itunes:category text="Religion &amp; Spirituality">
-    <itunes:category text="Christianity" />
-      </itunes:category>
+      <itunes:category text="Christianity" />
+    </itunes:category>
     <itunes:explicit>clean</itunes:explicit>
     {% for post in site.posts %}
-    
     <item>
       <title><![CDATA[{{ post.title }}]]></title>
       <itunes:author><![CDATA[{{ post.author }}]]></itunes:author>
@@ -39,5 +39,5 @@ layout: nil
       <itunes:keywords><![CDATA[{{ site.podcast.keyword }}]]></itunes:keywords>
     </item>
     {% endfor %}
-<channel>
+  </channel>
 </rss>
