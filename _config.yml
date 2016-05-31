@@ -1,7 +1,7 @@
 markdown: kramdown
 safe: true
 lsi: false
-rouge: true
+highlighter: pygments
 name: "예수의 핏소리(양누리 공동체)"
 description: "Yangnuri-Podcast, 양누리 공동체(Yangnuri mission church)의 설교을 제공합니다."
 url: http://yangnuri2.github.io/
